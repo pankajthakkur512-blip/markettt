@@ -17,12 +17,12 @@
                 </div>
                 
                 <div class="nav-links" id="navLinks">
-                    <a href="#home">Home</a>
-                    <a href="#products">Products</a>
-                    <a href="#artisans">Artisans</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                    <button class="btn btn-primary">Sell Your Products</button>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="artisans.html">For Artisans</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <button class="btn btn-primary" onclick="window.location.href='artisans.html'">Sell Your Products</button>
                 </div>
 
                 <div class="hamburger" onclick="toggleMenu()">
@@ -47,139 +47,113 @@
                 from Maharashtra. From furniture to crafts, each piece tells a story of tradition, craftsmanship, and sustainability.
             </p>
             <div class="hero-buttons">
-                <button class="btn btn-primary">Explore Products</button>
-                <button class="btn btn-secondary">Become an Artisan</button>
+                <button class="btn btn-primary" onclick="window.location.href='products.html'">Explore Products</button>
+                <button class="btn btn-secondary" onclick="window.location.href='artisans.html'">Become an Artisan</button>
             </div>
         </div>
     </section>
 
-    <!-- Featured Products -->
-    <section class="featured-products" id="products">
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Marketplace?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Quality Assurance</h3>
+                    <p>Every product is verified for quality and authenticity by our expert team</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌍</div>
+                    <h3>Global Reach</h3>
+                    <p>Access to national and international markets with worldwide shipping</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚚</div>
+                    <h3>Reliable Logistics</h3>
+                    <p>Efficient last-mile delivery solutions ensuring safe product delivery</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Brand Building</h3>
+                    <p>Showcase your unique craftsmanship with credible branding support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Preview -->
+    <section class="featured-preview">
         <div class="container">
             <h2 class="section-title">Featured Products</h2>
-            <p class="section-subtitle">
-                Explore our diverse handcrafted bamboo products collection
-            </p>
-
-            <div class="products-grid" id="productsGrid">
-                <!-- Products will be loaded here by JavaScript -->
-            </div>
-
-            <div class="view-all">
-                <button class="btn btn-primary">View All Products</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2>Empowering Rural Artisans of Maharashtra</h2>
-                    <p>
-                        We are dedicated to solving the challenges faced by rural entrepreneurs 
-                        in Maharashtra by providing a platform that bridges the gap between 
-                        traditional craftsmanship and modern markets.
-                    </p>
-                    
-                    <div class="features">
-                        <div class="feature-item">
-                            <div class="feature-icon">🎯</div>
-                            <div>
-                                <h3>Quality Assurance</h3>
-                                <p>Every product is verified for quality and authenticity</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">🌍</div>
-                            <div>
-                                <h3>Global Reach</h3>
-                                <p>Access to national and international markets</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">🚚</div>
-                            <div>
-                                <h3>Reliable Logistics</h3>
-                                <p>Efficient last-mile delivery solutions</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">✨</div>
-                            <div>
-                                <h3>Brand Building</h3>
-                                <p>Showcase your unique craftsmanship with credible branding</p>
-                            </div>
-                        </div>
+            <p class="section-subtitle">Handcrafted with love by Maharashtra's finest artisans</p>
+            
+            <div class="products-preview-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=400" alt="Bamboo Chair">
+                        <div class="product-badge">Eco-Friendly</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bamboo Dining Chair</h3>
+                        <p class="product-artisan">By Ramesh Patil, Pune</p>
+                        <span class="product-price">₹3,500</span>
                     </div>
                 </div>
 
-                <div class="about-image">
-                    <img 
-                        src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=600" 
-                        alt="Artisan at work" 
-                    />
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400" alt="Bamboo Baskets">
+                        <div class="product-badge">Eco-Friendly</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bamboo Handicraft Basket Set</h3>
+                        <p class="product-artisan">By Savita Deshmukh, Nagpur</p>
+                        <span class="product-price">₹1,200</span>
+                    </div>
                 </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?w=400" alt="Bamboo Table">
+                        <div class="product-badge">Eco-Friendly</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bamboo Coffee Table</h3>
+                        <p class="product-artisan">By Ganesh More, Satara</p>
+                        <span class="product-price">₹8,500</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <button class="btn btn-primary" onclick="window.location.href='products.html'">View All Products</button>
             </div>
         </div>
     </section>
 
-    <!-- Artisan Section -->
-    <section class="artisan-section" id="artisans">
+    <!-- Artisan Stories Section -->
+    <section class="artisan-stories">
         <div class="container">
-            <h2 class="section-title">Join Our Artisan Community</h2>
-            <p class="section-subtitle">
-                Are you a bamboo artisan from Maharashtra? Start selling today!
-            </p>
-
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">📱</div>
-                    <h3>Easy Registration</h3>
-                    <p>Simple onboarding process designed for rural entrepreneurs</p>
+            <h2 class="section-title">Meet Our Artisans</h2>
+            <div class="artisan-grid">
+                <div class="artisan-story-card">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=600" alt="Rural artisan working">
+                    <div class="story-content">
+                        <h3>Preserving Heritage</h3>
+                        <p>Our artisans bring generations of traditional bamboo crafting knowledge from rural Maharashtra villages.</p>
+                    </div>
                 </div>
-
-                <div class="benefit-card">
-                    <div class="benefit-icon">💰</div>
-                    <h3>Fair Pricing</h3>
-                    <p>You set your prices, we don't take hefty commissions</p>
+                <div class="artisan-story-card">
+                    <img src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=600" alt="Handmade products">
+                    <div class="story-content">
+                        <h3>Empowering Communities</h3>
+                        <p>Every purchase directly supports rural families and helps sustain traditional craftsmanship.</p>
+                    </div>
                 </div>
-
-                <div class="benefit-card">
-                    <div class="benefit-icon">📦</div>
-                    <h3>Logistics Support</h3>
-                    <p>We handle packaging and shipping to anywhere in the world</p>
-                </div>
-
-                <div class="benefit-card">
-                    <div class="benefit-icon">📊</div>
-                    <h3>Marketing Support</h3>
-                    <p>Professional photography and marketing for your products</p>
-                </div>
-
-                <div class="benefit-card">
-                    <div class="benefit-icon">🎓</div>
-                    <h3>Training</h3>
-                    <p>Free training on digital marketing and quality standards</p>
-                </div>
-
-                <div class="benefit-card">
-                    <div class="benefit-icon">🤝</div>
-                    <h3>Community</h3>
-                    <p>Connect with fellow artisans and share best practices</p>
-                </div>
-            </div>
-
-            <div class="cta-section">
-                <h3>Ready to showcase your bamboo products to the world?</h3>
-                <button class="btn btn-primary btn-large">Register as an Artisan</button>
-                <p class="cta-note">
-                    For assistance in Marathi/Hindi: Call +91-XXXX-XXXXXX
-                </p>
             </div>
         </div>
     </section>
@@ -206,22 +180,22 @@
                 <div class="footer-column">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#artisans">For Artisans</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="artisans.html">For Artisans</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-column">
                     <h4>For Artisans</h4>
                     <ul>
-                        <li><a href="#">Register Now</a></li>
-                        <li><a href="#">Seller Dashboard</a></li>
-                        <li><a href="#">Quality Guidelines</a></li>
-                        <li><a href="#">Support & Training</a></li>
-                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="artisans.html">Register Now</a></li>
+                        <li><a href="artisans.html#dashboard">Seller Dashboard</a></li>
+                        <li><a href="artisans.html#guidelines">Quality Guidelines</a></li>
+                        <li><a href="artisans.html#support">Support & Training</a></li>
+                        <li><a href="artisans.html#stories">Success Stories</a></li>
                     </ul>
                 </div>
 

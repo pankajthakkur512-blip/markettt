@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Maharashtra Bamboo Artisan Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h2>🎋 Maharashtra Bamboo Artisan</h2>
+                </div>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="artisans.html">For Artisans</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <button class="btn btn-primary" onclick="window.location.href='artisans.html'">Sell Your Products</button>
+                </div>
+
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Bamboo Products</h1>
+            <p>Handcrafted with love by rural artisans of Maharashtra</p>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
+                <button class="filter-btn" onclick="filterProducts('furniture')">Furniture</button>
+                <button class="filter-btn" onclick="filterProducts('decor')">Home Decor</button>
+                <button class="filter-btn" onclick="filterProducts('kitchen')">Kitchen Items</button>
+                <button class="filter-btn" onclick="filterProducts('handicraft')">Handicrafts</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Products -->
+    <section class="all-products">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>🎋 Maharashtra Bamboo Artisan</h3>
+                    <p>
+                        Empowering rural artisans, preserving traditions, 
+                        and promoting sustainable living through authentic 
+                        bamboo products.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="artisans.html">For Artisans</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>For Artisans</h4>
+                    <ul>
+                        <li><a href="artisans.html">Register Now</a></li>
+                        <li><a href="artisans.html#dashboard">Seller Dashboard</a></li>
+                        <li><a href="artisans.html#guidelines">Quality Guidelines</a></li>
+                        <li><a href="artisans.html#support">Support & Training</a></li>
+                        <li><a href="artisans.html#stories">Success Stories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>📍 Maharashtra, India</li>
+                        <li>📧 support@bambooartisan.com</li>
+                        <li>📞 +91-XXXX-XXXXXX</li>
+                        <li>🕒 Mon-Sat: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Maharashtra Bamboo Artisan Marketplace. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Shipping Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

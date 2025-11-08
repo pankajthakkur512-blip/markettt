@@ -6,7 +6,8 @@ const products = [
         price: "₹3,500",
         artisan: "Ramesh Patil, Pune",
         image: "https://images.unsplash.com/photo-1503602642458-232111445657?w=400",
-        description: "Handcrafted eco-friendly dining chair"
+        description: "Handcrafted eco-friendly dining chair",
+        category: "furniture"
     },
     {
         id: 2,
@@ -14,7 +15,8 @@ const products = [
         price: "₹1,200",
         artisan: "Savita Deshmukh, Nagpur",
         image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400",
-        description: "Traditional storage baskets (Set of 3)"
+        description: "Traditional storage baskets (Set of 3)",
+        category: "handicraft"
     },
     {
         id: 3,
@@ -22,7 +24,8 @@ const products = [
         price: "₹800",
         artisan: "Suresh Jadhav, Nashik",
         image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
-        description: "Melodious handmade wind chimes"
+        description: "Melodious handmade wind chimes",
+        category: "decor"
     },
     {
         id: 4,
@@ -30,7 +33,8 @@ const products = [
         price: "₹5,800",
         artisan: "Anjali Kulkarni, Mumbai",
         image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=400",
-        description: "Comfortable outdoor lounge chair"
+        description: "Comfortable outdoor lounge chair",
+        category: "furniture"
     },
     {
         id: 5,
@@ -38,7 +42,8 @@ const products = [
         price: "₹1,500",
         artisan: "Prakash Raut, Kolhapur",
         image: "https://images.unsplash.com/photo-1584990347449-39b0bea4c107?w=400",
-        description: "Eco-friendly cooking utensils (6 pieces)"
+        description: "Eco-friendly cooking utensils (6 pieces)",
+        category: "kitchen"
     },
     {
         id: 6,
@@ -46,7 +51,8 @@ const products = [
         price: "₹2,800",
         artisan: "Meera Shinde, Aurangabad",
         image: "https://images.unsplash.com/photo-1513519245088-0e12902e35ca?w=400",
-        description: "Decorative wall hanging art piece"
+        description: "Decorative wall hanging art piece",
+        category: "decor"
     },
     {
         id: 7,
@@ -54,7 +60,8 @@ const products = [
         price: "₹8,500",
         artisan: "Ganesh More, Satara",
         image: "https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?w=400",
-        description: "Elegant sustainable coffee table"
+        description: "Elegant sustainable coffee table",
+        category: "furniture"
     },
     {
         id: 8,
@@ -62,7 +69,8 @@ const products = [
         price: "₹1,800",
         artisan: "Pooja Kamble, Thane",
         image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400",
-        description: "Artistic pendant lamp shade"
+        description: "Artistic pendant lamp shade",
+        category: "decor"
     },
     {
         id: 9,
@@ -70,15 +78,25 @@ const products = [
         price: "₹950",
         artisan: "Rahul Pawar, Solapur",
         image: "https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=400",
-        description: "Handcrafted multi-compartment jewelry organizer"
+        description: "Handcrafted multi-compartment jewelry organizer",
+        category: "handicraft"
     }
 ];
 
+let currentFilter = 'all';
+
 // Load products into the grid
-function loadProducts() {
+function loadProducts(filter = 'all') {
     const productsGrid = document.getElementById('productsGrid');
+    if (!productsGrid) return;
     
-    products.forEach(product => {
+    productsGrid.innerHTML = '';
+    
+    const filteredProducts = filter === 'all' 
+        ? products 
+        : products.filter(p => p.category === filter);
+    
+    filteredProducts.forEach(product => {
         const productCard = `
             <div class="product-card">
                 <div class="product-image">
@@ -100,6 +118,18 @@ function loadProducts() {
     });
 }
 
+// Filter products
+function filterProducts(category) {
+    currentFilter = category;
+    loadProducts(category);
+    
+    // Update active button
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+}
+
 // Toggle mobile menu
 function toggleMenu() {
     const navLinks = document.getElementById('navLinks');
@@ -112,9 +142,19 @@ function addToCart(productId) {
     alert(`Added "${product.name}" to cart!\n\nThis is a demo. In production, this would add the item to your shopping cart.`);
 }
 
-// Smooth scrolling for navigation links
+// Smooth scrolling for all anchor links
 document.addEventListener('DOMContentLoaded', function() {
     loadProducts();
+    
+    // Handle form submissions
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your submission has been received. We will contact you within 2-3 business days.');
+            form.reset();
+        });
+    });
     
     // Smooth scroll for all anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -129,7 +169,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Close mobile menu if open
                 const navLinks = document.getElementById('navLinks');
-                navLinks.classList.remove('active');
+                if (navLinks) {
+                    navLinks.classList.remove('active');
+                }
             }
         });
     });

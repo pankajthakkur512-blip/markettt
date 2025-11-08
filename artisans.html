@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Artisans - Maharashtra Bamboo Artisan Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h2>🎋 Maharashtra Bamboo Artisan</h2>
+                </div>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="artisans.html">For Artisans</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <button class="btn btn-primary" onclick="window.location.href='artisans.html'">Sell Your Products</button>
+                </div>
+
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Join Our Artisan Community</h1>
+            <p>Empower your bamboo craft business with our platform</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="artisan-benefits">
+        <div class="container">
+            <h2 class="section-title">Why Join Us?</h2>
+            <p class="section-subtitle">Start selling your bamboo products to customers worldwide</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📱</div>
+                    <h3>Easy Registration</h3>
+                    <p>Simple onboarding process designed for rural entrepreneurs with support in Marathi and Hindi</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Fair Pricing</h3>
+                    <p>You set your prices, we charge minimal commission to ensure maximum profit for you</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📦</div>
+                    <h3>Logistics Support</h3>
+                    <p>We handle packaging, shipping, and delivery to customers anywhere in India and abroad</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3>Marketing Support</h3>
+                    <p>Professional photography, product descriptions, and digital marketing for your products</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎓</div>
+                    <h3>Free Training</h3>
+                    <p>Training programs on quality standards, packaging, digital tools, and business management</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Artisan Community</h3>
+                    <p>Connect with fellow artisans, share best practices, and grow together</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration-section">
+        <div class="container">
+            <h2 class="section-title">Register as an Artisan</h2>
+            <div class="registration-container">
+                <form class="artisan-form">
+                    <div class="form-group">
+                        <label>Full Name / पूर्ण नाव</label>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mobile Number / मोबाईल नंबर</label>
+                        <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Village/City / गाव/शहर</label>
+                        <input type="text" placeholder="Enter your location" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>District / जिल्हा</label>
+                        <select required>
+                            <option value="">Select District</option>
+                            <option>Pune</option>
+                            <option>Mumbai</option>
+                            <option>Nagpur</option>
+                            <option>Nashik</option>
+                            <option>Aurangabad</option>
+                            <option>Solapur</option>
+                            <option>Kolhapur</option>
+                            <option>Thane</option>
+                            <option>Satara</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Type of Products / उत्पादनाचा प्रकार</label>
+                        <select required>
+                            <option value="">Select Product Type</option>
+                            <option>Furniture</option>
+                            <option>Home Decor</option>
+                            <option>Kitchen Items</option>
+                            <option>Handicrafts</option>
+                            <option>Mixed Products</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Years of Experience / अनुभव (वर्षे)</label>
+                        <input type="number" placeholder="Enter years of experience" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email (Optional)</label>
+                        <input type="email" placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tell us about your craft / आपल्या कलाकुसरीबद्दल सांगा</label>
+                        <textarea rows="4" placeholder="Describe your products and craftsmanship"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Register Now</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Need Help?</h3>
+                    <p>मदतीसाठी संपर्क साधा / For assistance, contact us:</p>
+                    <ul>
+                        <li>📞 Call: +91-XXXX-XXXXXX</li>
+                        <li>💬 WhatsApp: +91-XXXX-XXXXXX</li>
+                        <li>📧 Email: artisan@bambooartisan.com</li>
+                        <li>🕒 Mon-Sat: 9AM - 6PM</li>
+                    </ul>
+                    <p class="note">We provide support in Marathi, Hindi, and English</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <h2 class="section-title">Success Stories from Our Artisans</h2>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=600" alt="Artisan success story">
+                    <div class="story-content">
+                        <h3>Ramesh Patil - Pune</h3>
+                        <p>"This platform helped me sell my bamboo chairs to customers in Delhi and Mumbai. My monthly income has tripled!"</p>
+                        <span class="story-tag">Furniture Artisan</span>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <img src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=600" alt="Artisan success story">
+                    <div class="story-content">
+                        <h3>Savita Deshmukh - Nagpur</h3>
+                        <p>"I can now focus on creating beautiful baskets while the platform handles shipping and marketing. Wonderful support!"</p>
+                        <span class="story-tag">Handicraft Artisan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>🎋 Maharashtra Bamboo Artisan</h3>
+                    <p>
+                        Empowering rural artisans, preserving traditions, 
+                        and promoting sustainable living through authentic 
+                        bamboo products.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="artisans.html">For Artisans</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>For Artisans</h4>
+                    <ul>
+                        <li><a href="artisans.html">Register Now</a></li>
+                        <li><a href="artisans.html#dashboard">Seller Dashboard</a></li>
+                        <li><a href="artisans.html#guidelines">Quality Guidelines</a></li>
+                        <li><a href="artisans.html#support">Support & Training</a></li>
+                        <li><a href="artisans.html#stories">Success Stories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>📍 Maharashtra, India</li>
+                        <li>📧 support@bambooartisan.com</li>
+                        <li>📞 +91-XXXX-XXXXXX</li>
+                        <li>🕒 Mon-Sat: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Maharashtra Bamboo Artisan Marketplace. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Shipping Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
