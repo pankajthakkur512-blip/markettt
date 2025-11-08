@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products - Maharashtra Bamboo Artisan Marketplace</title>
+    <title>Shopping Cart - Maharashtra Bamboo Artisan Marketplace</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -44,29 +44,22 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Our Bamboo Products</h1>
-            <p>Handcrafted with love by rural artisans of Maharashtra</p>
+            <h1>Shopping Cart</h1>
+            <p>Review your items before checkout</p>
         </div>
     </section>
 
-    <!-- Product Categories -->
-    <section class="product-categories">
+    <!-- Cart Section -->
+    <section class="cart-section">
         <div class="container">
-            <div class="category-filters">
-                <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
-                <button class="filter-btn" onclick="filterProducts('furniture')">Furniture</button>
-                <button class="filter-btn" onclick="filterProducts('decor')">Home Decor</button>
-                <button class="filter-btn" onclick="filterProducts('kitchen')">Kitchen Items</button>
-                <button class="filter-btn" onclick="filterProducts('handicraft')">Handicrafts</button>
-            </div>
-        </div>
-    </section>
+            <div class="cart-container">
+                <div class="cart-items-section" id="cartItems">
+                    <!-- Cart items will be loaded here by JavaScript -->
+                </div>
 
-    <!-- All Products -->
-    <section class="all-products">
-        <div class="container">
-            <div class="products-grid" id="productsGrid">
-                <!-- Products will be loaded by JavaScript -->
+                <div class="cart-summary" id="cartSummary">
+                    <!-- Summary will be loaded here by JavaScript -->
+                </div>
             </div>
         </div>
     </section>
