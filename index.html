@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maharashtra Bamboo Artisan Marketplace - Authentic Handcrafted Products</title>
+    <meta name="description" content="Connecting rural bamboo artisans from Maharashtra with national and international markets. Shop authentic, sustainable handcrafted bamboo products - furniture, crafts, home decor & more.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h2>🎋 Maharashtra Bamboo Artisan</h2>
+                </div>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                    <a href="#artisans">Artisans</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <button class="btn btn-primary">Sell Your Products</button>
+                </div>
+
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Authentic Bamboo Products from Maharashtra</h1>
+            <p class="hero-subtitle">
+                Connecting rural artisans with national & international markets
+            </p>
+            <p class="hero-description">
+                Discover handcrafted, sustainable bamboo products made by skilled artisans 
+                from Maharashtra. From furniture to crafts, each piece tells a story of tradition, craftsmanship, and sustainability.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Explore Products</button>
+                <button class="btn btn-secondary">Become an Artisan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products" id="products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-subtitle">
+                Explore our diverse handcrafted bamboo products collection
+            </p>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+
+            <div class="view-all">
+                <button class="btn btn-primary">View All Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Empowering Rural Artisans of Maharashtra</h2>
+                    <p>
+                        We are dedicated to solving the challenges faced by rural entrepreneurs 
+                        in Maharashtra by providing a platform that bridges the gap between 
+                        traditional craftsmanship and modern markets.
+                    </p>
+                    
+                    <div class="features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <div>
+                                <h3>Quality Assurance</h3>
+                                <p>Every product is verified for quality and authenticity</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">🌍</div>
+                            <div>
+                                <h3>Global Reach</h3>
+                                <p>Access to national and international markets</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">🚚</div>
+                            <div>
+                                <h3>Reliable Logistics</h3>
+                                <p>Efficient last-mile delivery solutions</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">✨</div>
+                            <div>
+                                <h3>Brand Building</h3>
+                                <p>Showcase your unique craftsmanship with credible branding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img 
+                        src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=600" 
+                        alt="Artisan at work" 
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artisan Section -->
+    <section class="artisan-section" id="artisans">
+        <div class="container">
+            <h2 class="section-title">Join Our Artisan Community</h2>
+            <p class="section-subtitle">
+                Are you a bamboo artisan from Maharashtra? Start selling today!
+            </p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">📱</div>
+                    <h3>Easy Registration</h3>
+                    <p>Simple onboarding process designed for rural entrepreneurs</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Fair Pricing</h3>
+                    <p>You set your prices, we don't take hefty commissions</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📦</div>
+                    <h3>Logistics Support</h3>
+                    <p>We handle packaging and shipping to anywhere in the world</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3>Marketing Support</h3>
+                    <p>Professional photography and marketing for your products</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎓</div>
+                    <h3>Training</h3>
+                    <p>Free training on digital marketing and quality standards</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Community</h3>
+                    <p>Connect with fellow artisans and share best practices</p>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h3>Ready to showcase your bamboo products to the world?</h3>
+                <button class="btn btn-primary btn-large">Register as an Artisan</button>
+                <p class="cta-note">
+                    For assistance in Marathi/Hindi: Call +91-XXXX-XXXXXX
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>🎋 Maharashtra Bamboo Artisan</h3>
+                    <p>
+                        Empowering rural artisans, preserving traditions, 
+                        and promoting sustainable living through authentic 
+                        bamboo products.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#artisans">For Artisans</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>For Artisans</h4>
+                    <ul>
+                        <li><a href="#">Register Now</a></li>
+                        <li><a href="#">Seller Dashboard</a></li>
+                        <li><a href="#">Quality Guidelines</a></li>
+                        <li><a href="#">Support & Training</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>📍 Maharashtra, India</li>
+                        <li>📧 support@bambooartisan.com</li>
+                        <li>📞 +91-XXXX-XXXXXX</li>
+                        <li>🕒 Mon-Sat: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Maharashtra Bamboo Artisan Marketplace. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Shipping Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
